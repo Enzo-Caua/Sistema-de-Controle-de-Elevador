@@ -1,0 +1,309 @@
+Analysis & Synthesis report for Projeto3
+Sun Dec 01 17:07:40 2024
+Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. General Register Statistics
+  9. Analysis & Synthesis Messages
+ 10. Analysis & Synthesis Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2020  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++---------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                              ;
++-----------------------------+---------------------------------------------+
+; Analysis & Synthesis Status ; Successful - Sun Dec 01 17:07:40 2024       ;
+; Quartus Prime Version       ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
+; Revision Name               ; Projeto3                                    ;
+; Top-level Entity Name       ; seletor_andar                               ;
+; Family                      ; MAX II                                      ;
+; Total logic elements        ; 0                                           ;
+; Total pins                  ; 11                                          ;
+; Total virtual pins          ; 0                                           ;
+; UFM blocks                  ; 0 / 1 ( 0 % )                               ;
++-----------------------------+---------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                              ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                           ; Setting            ; Default Value      ;
++------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                           ; EPM240T100C5       ;                    ;
+; Top-level entity name                                            ; seletor_andar      ; Projeto3           ;
+; Family name                                                      ; MAX II             ; Cyclone V          ;
+; Use smart compilation                                            ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                      ; Off                ; Off                ;
+; Restructure Multiplexers                                         ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                              ; Off                ; Off                ;
+; Preserve fewer node names                                        ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                    ; Enable             ; Enable             ;
+; Verilog Version                                                  ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                     ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                         ; Auto               ; Auto               ;
+; Safe State Machine                                               ; Off                ; Off                ;
+; Extract Verilog State Machines                                   ; On                 ; On                 ;
+; Extract VHDL State Machines                                      ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                       ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                   ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                          ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                        ; On                 ; On                 ;
+; Parallel Synthesis                                               ; On                 ; On                 ;
+; NOT Gate Push-Back                                               ; On                 ; On                 ;
+; Power-Up Don't Care                                              ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                     ; Off                ; Off                ;
+; Remove Duplicate Registers                                       ; On                 ; On                 ;
+; Ignore CARRY Buffers                                             ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                           ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                            ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                        ; Off                ; Off                ;
+; Ignore LCELL Buffers                                             ; Off                ; Off                ;
+; Ignore SOFT Buffers                                              ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                   ; Off                ; Off                ;
+; Optimization Technique                                           ; Balanced           ; Balanced           ;
+; Carry Chain Length                                               ; 70                 ; 70                 ;
+; Auto Carry Chains                                                ; On                 ; On                 ;
+; Auto Open-Drain Pins                                             ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                            ; Off                ; Off                ;
+; Auto Shift Register Replacement                                  ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                  ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                    ; On                 ; On                 ;
+; Allow Synchronous Control Signals                                ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                           ; Off                ; Off                ;
+; Auto Resource Sharing                                            ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing              ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                ; Off                ; Off                ;
+; Report Parameter Settings                                        ; On                 ; On                 ;
+; Report Source Assignments                                        ; On                 ; On                 ;
+; Report Connectivity Checks                                       ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                               ; Off                ; Off                ;
+; Synchronization Register Chain Length                            ; 2                  ; 2                  ;
+; Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                  ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report         ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report               ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report        ; 100                ; 100                ;
+; Clock MUX Protection                                             ; On                 ; On                 ;
+; Block Design Naming                                              ; Auto               ; Auto               ;
+; Synthesis Effort                                                 ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal     ; On                 ; On                 ;
+; Analysis & Synthesis Message Level                               ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                      ; Auto               ; Auto               ;
++------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 12          ;
+; Maximum allowed            ; 12          ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                               ;
++----------------------------------+-----------------+------------------------+--------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                 ; Library ;
++----------------------------------+-----------------+------------------------+--------------------------------------------------------------+---------+
+; seletor_andar.v                  ; yes             ; User Verilog HDL File  ; C:/Users/Enzo/Documents/Verilog/Projeto_3_CD/seletor_andar.v ;         ;
++----------------------------------+-----------------+------------------------+--------------------------------------------------------------+---------+
+
+
++-----------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary         ;
++---------------------------------------------+-------+
+; Resource                                    ; Usage ;
++---------------------------------------------+-------+
+; Total logic elements                        ; 0     ;
+;     -- Combinational with no register       ; 0     ;
+;     -- Register only                        ; 0     ;
+;     -- Combinational with a register        ; 0     ;
+;                                             ;       ;
+; Logic element usage by number of LUT inputs ;       ;
+;     -- 4 input functions                    ; 0     ;
+;     -- 3 input functions                    ; 0     ;
+;     -- 2 input functions                    ; 0     ;
+;     -- 1 input functions                    ; 0     ;
+;     -- 0 input functions                    ; 0     ;
+;                                             ;       ;
+; Logic elements by mode                      ;       ;
+;     -- normal mode                          ; 0     ;
+;     -- arithmetic mode                      ; 0     ;
+;     -- qfbk mode                            ; 0     ;
+;     -- register cascade mode                ; 0     ;
+;     -- synchronous clear/load mode          ; 0     ;
+;     -- asynchronous clear/load mode         ; 0     ;
+;                                             ;       ;
+; Total registers                             ; 0     ;
+; I/O pins                                    ; 11    ;
++---------------------------------------------+-------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                  ;
++----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------+---------------+--------------+
+; Compilation Hierarchy Node ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name ; Entity Name   ; Library Name ;
++----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------+---------------+--------------+
+; |seletor_andar             ; 0 (0)       ; 0            ; 0          ; 11   ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |seletor_andar      ; seletor_andar ; work         ;
++----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------+---------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 0     ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+    Info: Processing started: Sun Dec 01 17:07:35 2024
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Projeto3 -c Projeto3
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 12 of the 12 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file flip_flop_d.v
+    Info (12023): Found entity 1: flip_flop_d File: C:/Users/Enzo/Documents/Verilog/Projeto_3_CD/flip_flop_d.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file divisor_frequencia_128hz.v
+    Info (12023): Found entity 1: divisor_frequencia_128Hz File: C:/Users/Enzo/Documents/Verilog/Projeto_3_CD/divisor_frequencia_128Hz.v Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file divisor_frequencia_principal.v
+    Info (12023): Found entity 1: divisor_frequencia_principal File: C:/Users/Enzo/Documents/Verilog/Projeto_3_CD/divisor_frequencia_principal.v Line: 3
+Info (12021): Found 2 design units, including 2 entities, in source file contador_up_down.v
+    Info (12023): Found entity 1: contador_UP_DOWN File: C:/Users/Enzo/Documents/Verilog/Projeto_3_CD/contador_UP_DOWN.v Line: 2
+    Info (12023): Found entity 2: controle_contador_UPDO File: C:/Users/Enzo/Documents/Verilog/Projeto_3_CD/contador_UP_DOWN.v Line: 36
+Info (12021): Found 1 design units, including 1 entities, in source file seletor_andar.v
+    Info (12023): Found entity 1: seletor_andar File: C:/Users/Enzo/Documents/Verilog/Projeto_3_CD/seletor_andar.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file duas_chaves_para_pulso.v
+    Info (12023): Found entity 1: duas_chaves_para_pulso File: C:/Users/Enzo/Documents/Verilog/Projeto_3_CD/duas_chaves_para_pulso.v Line: 1
+Warning (10236): Verilog HDL Implicit Net warning at divisor_frequencia_principal.v(11): created implicit net for "reset" File: C:/Users/Enzo/Documents/Verilog/Projeto_3_CD/divisor_frequencia_principal.v Line: 11
+Warning (10236): Verilog HDL Implicit Net warning at contador_UP_DOWN.v(7): created implicit net for "UP" File: C:/Users/Enzo/Documents/Verilog/Projeto_3_CD/contador_UP_DOWN.v Line: 7
+Warning (10236): Verilog HDL Implicit Net warning at contador_UP_DOWN.v(8): created implicit net for "DO" File: C:/Users/Enzo/Documents/Verilog/Projeto_3_CD/contador_UP_DOWN.v Line: 8
+Warning (10236): Verilog HDL Implicit Net warning at contador_UP_DOWN.v(13): created implicit net for "Q0" File: C:/Users/Enzo/Documents/Verilog/Projeto_3_CD/contador_UP_DOWN.v Line: 13
+Warning (10236): Verilog HDL Implicit Net warning at contador_UP_DOWN.v(14): created implicit net for "Q1" File: C:/Users/Enzo/Documents/Verilog/Projeto_3_CD/contador_UP_DOWN.v Line: 14
+Warning (10236): Verilog HDL Implicit Net warning at contador_UP_DOWN.v(15): created implicit net for "Q2" File: C:/Users/Enzo/Documents/Verilog/Projeto_3_CD/contador_UP_DOWN.v Line: 15
+Warning (10236): Verilog HDL Implicit Net warning at contador_UP_DOWN.v(16): created implicit net for "n_Q0" File: C:/Users/Enzo/Documents/Verilog/Projeto_3_CD/contador_UP_DOWN.v Line: 16
+Warning (10236): Verilog HDL Implicit Net warning at contador_UP_DOWN.v(17): created implicit net for "n_Q1" File: C:/Users/Enzo/Documents/Verilog/Projeto_3_CD/contador_UP_DOWN.v Line: 17
+Warning (10236): Verilog HDL Implicit Net warning at contador_UP_DOWN.v(18): created implicit net for "n_Q2" File: C:/Users/Enzo/Documents/Verilog/Projeto_3_CD/contador_UP_DOWN.v Line: 18
+Warning (10236): Verilog HDL Implicit Net warning at contador_UP_DOWN.v(19): created implicit net for "D0" File: C:/Users/Enzo/Documents/Verilog/Projeto_3_CD/contador_UP_DOWN.v Line: 19
+Warning (10236): Verilog HDL Implicit Net warning at contador_UP_DOWN.v(20): created implicit net for "D1" File: C:/Users/Enzo/Documents/Verilog/Projeto_3_CD/contador_UP_DOWN.v Line: 20
+Warning (10236): Verilog HDL Implicit Net warning at contador_UP_DOWN.v(21): created implicit net for "D2" File: C:/Users/Enzo/Documents/Verilog/Projeto_3_CD/contador_UP_DOWN.v Line: 21
+Warning (10236): Verilog HDL Implicit Net warning at contador_UP_DOWN.v(43): created implicit net for "n_UP" File: C:/Users/Enzo/Documents/Verilog/Projeto_3_CD/contador_UP_DOWN.v Line: 43
+Warning (10236): Verilog HDL Implicit Net warning at contador_UP_DOWN.v(44): created implicit net for "n_DO" File: C:/Users/Enzo/Documents/Verilog/Projeto_3_CD/contador_UP_DOWN.v Line: 44
+Warning (10236): Verilog HDL Implicit Net warning at contador_UP_DOWN.v(47): created implicit net for "a0_d0" File: C:/Users/Enzo/Documents/Verilog/Projeto_3_CD/contador_UP_DOWN.v Line: 47
+Warning (10236): Verilog HDL Implicit Net warning at contador_UP_DOWN.v(47): created implicit net for "QO" File: C:/Users/Enzo/Documents/Verilog/Projeto_3_CD/contador_UP_DOWN.v Line: 47
+Warning (10236): Verilog HDL Implicit Net warning at contador_UP_DOWN.v(48): created implicit net for "a1_d0" File: C:/Users/Enzo/Documents/Verilog/Projeto_3_CD/contador_UP_DOWN.v Line: 48
+Warning (10236): Verilog HDL Implicit Net warning at contador_UP_DOWN.v(49): created implicit net for "a2_d0" File: C:/Users/Enzo/Documents/Verilog/Projeto_3_CD/contador_UP_DOWN.v Line: 49
+Warning (10236): Verilog HDL Implicit Net warning at contador_UP_DOWN.v(50): created implicit net for "a3_d0" File: C:/Users/Enzo/Documents/Verilog/Projeto_3_CD/contador_UP_DOWN.v Line: 50
+Warning (10236): Verilog HDL Implicit Net warning at contador_UP_DOWN.v(50): created implicit net for "n_QO" File: C:/Users/Enzo/Documents/Verilog/Projeto_3_CD/contador_UP_DOWN.v Line: 50
+Warning (10236): Verilog HDL Implicit Net warning at contador_UP_DOWN.v(51): created implicit net for "a4_d0" File: C:/Users/Enzo/Documents/Verilog/Projeto_3_CD/contador_UP_DOWN.v Line: 51
+Warning (10236): Verilog HDL Implicit Net warning at contador_UP_DOWN.v(55): created implicit net for "a0_d1" File: C:/Users/Enzo/Documents/Verilog/Projeto_3_CD/contador_UP_DOWN.v Line: 55
+Warning (10236): Verilog HDL Implicit Net warning at contador_UP_DOWN.v(56): created implicit net for "a1_d1" File: C:/Users/Enzo/Documents/Verilog/Projeto_3_CD/contador_UP_DOWN.v Line: 56
+Warning (10236): Verilog HDL Implicit Net warning at contador_UP_DOWN.v(57): created implicit net for "a2_d1" File: C:/Users/Enzo/Documents/Verilog/Projeto_3_CD/contador_UP_DOWN.v Line: 57
+Warning (10236): Verilog HDL Implicit Net warning at contador_UP_DOWN.v(58): created implicit net for "a3_d1" File: C:/Users/Enzo/Documents/Verilog/Projeto_3_CD/contador_UP_DOWN.v Line: 58
+Warning (10236): Verilog HDL Implicit Net warning at contador_UP_DOWN.v(59): created implicit net for "a4_d1" File: C:/Users/Enzo/Documents/Verilog/Projeto_3_CD/contador_UP_DOWN.v Line: 59
+Warning (10236): Verilog HDL Implicit Net warning at contador_UP_DOWN.v(63): created implicit net for "a0_d2" File: C:/Users/Enzo/Documents/Verilog/Projeto_3_CD/contador_UP_DOWN.v Line: 63
+Warning (10236): Verilog HDL Implicit Net warning at contador_UP_DOWN.v(64): created implicit net for "a1_d2" File: C:/Users/Enzo/Documents/Verilog/Projeto_3_CD/contador_UP_DOWN.v Line: 64
+Warning (10236): Verilog HDL Implicit Net warning at contador_UP_DOWN.v(65): created implicit net for "a2_d2" File: C:/Users/Enzo/Documents/Verilog/Projeto_3_CD/contador_UP_DOWN.v Line: 65
+Warning (10236): Verilog HDL Implicit Net warning at contador_UP_DOWN.v(66): created implicit net for "a3_d2" File: C:/Users/Enzo/Documents/Verilog/Projeto_3_CD/contador_UP_DOWN.v Line: 66
+Warning (10236): Verilog HDL Implicit Net warning at seletor_andar.v(8): created implicit net for "n_T0" File: C:/Users/Enzo/Documents/Verilog/Projeto_3_CD/seletor_andar.v Line: 8
+Warning (10236): Verilog HDL Implicit Net warning at seletor_andar.v(9): created implicit net for "n_T1" File: C:/Users/Enzo/Documents/Verilog/Projeto_3_CD/seletor_andar.v Line: 9
+Warning (10236): Verilog HDL Implicit Net warning at seletor_andar.v(10): created implicit net for "n_P0" File: C:/Users/Enzo/Documents/Verilog/Projeto_3_CD/seletor_andar.v Line: 10
+Warning (10236): Verilog HDL Implicit Net warning at seletor_andar.v(11): created implicit net for "n_P1" File: C:/Users/Enzo/Documents/Verilog/Projeto_3_CD/seletor_andar.v Line: 11
+Warning (10236): Verilog HDL Implicit Net warning at seletor_andar.v(12): created implicit net for "n_S0" File: C:/Users/Enzo/Documents/Verilog/Projeto_3_CD/seletor_andar.v Line: 12
+Warning (10236): Verilog HDL Implicit Net warning at seletor_andar.v(13): created implicit net for "n_S1" File: C:/Users/Enzo/Documents/Verilog/Projeto_3_CD/seletor_andar.v Line: 13
+Warning (10236): Verilog HDL Implicit Net warning at seletor_andar.v(15): created implicit net for "T_in" File: C:/Users/Enzo/Documents/Verilog/Projeto_3_CD/seletor_andar.v Line: 15
+Warning (10236): Verilog HDL Implicit Net warning at seletor_andar.v(16): created implicit net for "T_out" File: C:/Users/Enzo/Documents/Verilog/Projeto_3_CD/seletor_andar.v Line: 16
+Warning (10236): Verilog HDL Implicit Net warning at seletor_andar.v(17): created implicit net for "P_in" File: C:/Users/Enzo/Documents/Verilog/Projeto_3_CD/seletor_andar.v Line: 17
+Warning (10236): Verilog HDL Implicit Net warning at seletor_andar.v(18): created implicit net for "P_out" File: C:/Users/Enzo/Documents/Verilog/Projeto_3_CD/seletor_andar.v Line: 18
+Warning (10236): Verilog HDL Implicit Net warning at seletor_andar.v(19): created implicit net for "S_in" File: C:/Users/Enzo/Documents/Verilog/Projeto_3_CD/seletor_andar.v Line: 19
+Warning (10236): Verilog HDL Implicit Net warning at seletor_andar.v(20): created implicit net for "S_out" File: C:/Users/Enzo/Documents/Verilog/Projeto_3_CD/seletor_andar.v Line: 20
+Warning (10236): Verilog HDL Implicit Net warning at seletor_andar.v(23): created implicit net for "CT1" File: C:/Users/Enzo/Documents/Verilog/Projeto_3_CD/seletor_andar.v Line: 23
+Warning (10236): Verilog HDL Implicit Net warning at seletor_andar.v(24): created implicit net for "CP1" File: C:/Users/Enzo/Documents/Verilog/Projeto_3_CD/seletor_andar.v Line: 24
+Warning (10236): Verilog HDL Implicit Net warning at seletor_andar.v(25): created implicit net for "CS1" File: C:/Users/Enzo/Documents/Verilog/Projeto_3_CD/seletor_andar.v Line: 25
+Warning (10236): Verilog HDL Implicit Net warning at seletor_andar.v(27): created implicit net for "CT0" File: C:/Users/Enzo/Documents/Verilog/Projeto_3_CD/seletor_andar.v Line: 27
+Warning (10236): Verilog HDL Implicit Net warning at seletor_andar.v(28): created implicit net for "CP0" File: C:/Users/Enzo/Documents/Verilog/Projeto_3_CD/seletor_andar.v Line: 28
+Warning (10236): Verilog HDL Implicit Net warning at seletor_andar.v(29): created implicit net for "CS0" File: C:/Users/Enzo/Documents/Verilog/Projeto_3_CD/seletor_andar.v Line: 29
+Info (12127): Elaborating entity "seletor_andar" for the top level hierarchy
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "CT" is stuck at VCC File: C:/Users/Enzo/Documents/Verilog/Projeto_3_CD/seletor_andar.v Line: 5
+    Warning (13410): Pin "CP" is stuck at VCC File: C:/Users/Enzo/Documents/Verilog/Projeto_3_CD/seletor_andar.v Line: 5
+    Warning (13410): Pin "CS" is stuck at VCC File: C:/Users/Enzo/Documents/Verilog/Projeto_3_CD/seletor_andar.v Line: 5
+Warning (21074): Design contains 8 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "P0" File: C:/Users/Enzo/Documents/Verilog/Projeto_3_CD/seletor_andar.v Line: 2
+    Warning (15610): No output dependent on input pin "P1" File: C:/Users/Enzo/Documents/Verilog/Projeto_3_CD/seletor_andar.v Line: 3
+    Warning (15610): No output dependent on input pin "A1" File: C:/Users/Enzo/Documents/Verilog/Projeto_3_CD/seletor_andar.v Line: 4
+    Warning (15610): No output dependent on input pin "A0" File: C:/Users/Enzo/Documents/Verilog/Projeto_3_CD/seletor_andar.v Line: 4
+    Warning (15610): No output dependent on input pin "T0" File: C:/Users/Enzo/Documents/Verilog/Projeto_3_CD/seletor_andar.v Line: 2
+    Warning (15610): No output dependent on input pin "T1" File: C:/Users/Enzo/Documents/Verilog/Projeto_3_CD/seletor_andar.v Line: 3
+    Warning (15610): No output dependent on input pin "S0" File: C:/Users/Enzo/Documents/Verilog/Projeto_3_CD/seletor_andar.v Line: 2
+    Warning (15610): No output dependent on input pin "S1" File: C:/Users/Enzo/Documents/Verilog/Projeto_3_CD/seletor_andar.v Line: 3
+Info (21057): Implemented 11 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 8 input pins
+    Info (21059): Implemented 3 output pins
+Info (144001): Generated suppressed messages file C:/Users/Enzo/Documents/Verilog/Projeto_3_CD/output_files/Projeto3.map.smsg
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 62 warnings
+    Info: Peak virtual memory: 4695 megabytes
+    Info: Processing ended: Sun Dec 01 17:07:40 2024
+    Info: Elapsed time: 00:00:05
+    Info: Total CPU time (on all processors): 00:00:12
+
+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in C:/Users/Enzo/Documents/Verilog/Projeto_3_CD/output_files/Projeto3.map.smsg.
+
+

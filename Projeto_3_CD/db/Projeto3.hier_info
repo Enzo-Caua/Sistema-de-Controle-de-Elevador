@@ -1,0 +1,18 @@
+|seletor_andar
+T0 => or_Terreo.IN0
+T0 => or_Terreo0.IN0
+T1 => or_Terreo.IN1
+T1 => or_Terreo0.IN1
+P0 => or_Primeiro.IN0
+P1 => or_Primeiro.IN1
+S0 => or_Segundo.IN0
+S0 => or_Segundo0.IN0
+S1 => or_Segundo.IN1
+S1 => or_Segundo0.IN1
+A1 => ~NO_FANOUT~
+A0 => ~NO_FANOUT~
+CT <= cts.DB_MAX_OUTPUT_PORT_TYPE
+CP <= CP.DB_MAX_OUTPUT_PORT_TYPE
+CS <= css.DB_MAX_OUTPUT_PORT_TYPE
+
+

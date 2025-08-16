@@ -1,0 +1,7 @@
+module seletor_andar(T_in, T_out, P_in, P_out, S_in, S_out, A1, A0, S2, S0, S1);
+	input T_in, P_in, S_in; // Chamada Internas
+	input T_out, P_out, S_out; // Chamadas Externas
+	input A1, A0; // Indicadores de Andar
+	output S1, S2, S0; // Indicador de Chamadas
+	
+	

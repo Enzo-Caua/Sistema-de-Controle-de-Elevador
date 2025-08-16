@@ -1,0 +1,36 @@
+module duas_chaves_para_pulso (
+    input wire clk,        // Clock do sistema
+    input wire reset,      // Sinal de reset
+    input wire chave1,     // Primeira chave
+    input wire chave2,     // Segunda chave
+    output reg pulso       // Sinal de saída
+);
+
+    reg chave1_ant; // Estado anterior da chave1
+    reg chave2_ant; // Estado anterior da chave2
+
+    always @(posedge clk or posedge reset) begin
+        if (reset) begin
+            // Reseta os estados e saída
+            chave1_ant <= 1'b0;
+            chave2_ant <= 1'b0;
+            pulso <= 1'b0;
+        end else begin
+            // Detecta borda de subida de chave1
+            if (chave1 && !chave1_ant) begin
+                pulso <= 1'b1;
+            end 
+            // Detecta borda de subida de chave2
+            else if (chave2 && !chave2_ant) begin
+                pulso <= 1'b1;
+            end else begin
+                pulso <= 1'b0; // Pulso é ativo por apenas um ciclo
+            end
+
+            // Atualiza estados anteriores
+            chave1_ant <= chave1;
+            chave2_ant <= chave2;
+        end
+    end
+
+endmodule
